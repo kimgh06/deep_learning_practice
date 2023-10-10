@@ -2,7 +2,7 @@
 // 2. Import dependencies DONE
 // 3. Setup webcam and canvas DONE
 // 4. Define references to those DONE
-// 5. Load handpose DONE
+// 5. Load handpose DONEz
 // 6. Detect function DONE
 // 7. Drawing utilities DONE
 // 8. Draw functions DONE

@@ -6,7 +6,7 @@ with sr.Microphone() as source:
     speech = r.listen(source)
 
 try:
-    audio = r.recognize_google(speech, language="en-US")
+    audio = r.recognize_google(speech, language="ko-KR")
     print("your audio: " + audio)
 except sr.UnknownValueError:
     print("Can't understanding")
