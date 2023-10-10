@@ -58,10 +58,10 @@ export default function UsingMediaPipe() {
   };
 
   return (
-    <div style={{ display: 'flex' }}>
+    <div style={{ display: 'flex', justifyContent: 'space-around' }}>
       <Webcam className="input_video" ref={webcamRef} mirrored style={{ display: 'none' }} />
       <canvas className="output_canvas" width={640} height={480} ref={canvasRef}></canvas>
-      <Canvas camera={{ position: [5, 5, 15] }} style={{ height: '400px' }}>
+      <Canvas camera={{ position: [5, 5, 15] }} style={{ width: '500px', height: '500px' }}>
         {/* <OrbitControls /> */}
         <ambientLight />
         <LookatComponent />
