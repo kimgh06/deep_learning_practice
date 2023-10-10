@@ -61,7 +61,7 @@ export default function UsingMediaPipe() {
     <div style={{ display: 'flex' }}>
       <Webcam className="input_video" ref={webcamRef} mirrored style={{ display: 'none' }} />
       <canvas className="output_canvas" width={640} height={480} ref={canvasRef}></canvas>
-      <Canvas camera={{ position: [5, 5, 10] }} style={{ height: '400px' }}>
+      <Canvas camera={{ position: [5, 5, 15] }} style={{ height: '400px' }}>
         {/* <OrbitControls /> */}
         <ambientLight />
         <LookatComponent />
@@ -96,7 +96,6 @@ function MakeHand({ result }) {
 
 function Makeline({ array }) {
   const points = [];
-  console.log(array)
   //eslint-disable-next-line
   array.map((i, n) => {
     points.push(new THREE.Vector3(10 - i.x * 10, 10 - i.y * 10, i.z * 10 + 5));
