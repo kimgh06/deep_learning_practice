@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import Webcam from "react-webcam";
 import { Hands, HAND_CONNECTIONS } from '@mediapipe/hands';
 import { drawConnectors, drawLandmarks } from "@mediapipe/drawing_utils";
-import { OrbitControls, Html } from "@react-three/drei";
+// import { OrbitControls, Html } from "@react-three/drei";
 import * as THREE from 'three';
 
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
@@ -108,6 +108,7 @@ function Makeline({ array }) {
   </group>;
 }
 
+//eslint-disable-next-line
 function int2Alpha(n) {
   return String.fromCharCode(('a'.charCodeAt()) + n);
 }

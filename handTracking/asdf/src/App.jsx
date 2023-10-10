@@ -9,7 +9,7 @@
 
 import React, { useRef } from "react";
 // import logo from './logo.svg';
-import * as tf from "@tensorflow/tfjs";
+// import * as tf from "@tensorflow/tfjs";
 import * as handpose from "@tensorflow-models/handpose";
 import Webcam from "react-webcam";
 import { drawHand } from "./utilities";

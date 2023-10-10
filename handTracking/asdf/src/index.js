@@ -1,13 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
+// import App from './App';
 import UsingMediaPipe from './UsingMediaPipe';
+import SpeechRecognitions from './speechRecognition';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
-    {/* <App /> */}
-    <UsingMediaPipe />
+    <BrowserRouter>
+      {/* <App /> */}
+      <Routes>
+        <Route path='/handTracking' element={<UsingMediaPipe />} />
+        <Route path='/speechRecognition' element={<SpeechRecognitions />} />
+      </Routes>
+    </BrowserRouter>
   </>
 );
 
